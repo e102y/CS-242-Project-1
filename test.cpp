@@ -2,13 +2,12 @@
 #include <string>
 #include <fstream>
 #include <random>
-
+#include <cstring>
 //#include <clib>
 //#include "OrderedSet.hpp"
 using namespace std;
-unsigned int Generate (int N, int T, float P, int G, ofstream output);
+void Generate (int N, int T, float P, int G, char * O);
 void Statistics (int T, float P, int G);
-void FileOutput(unsigned int O);
 
 int main (int argc, char * argv [])
 {
@@ -20,71 +19,90 @@ int main (int argc, char * argv [])
 	{
 	exit(2);
 	}
-	int N = stoi(argv[1]);
-	int T = stoi(argv[2]);
-	float P = stof(argv[3]);
-	int G = stoi(argv[4]);
-
+	int N = stoi(argv[2]);
+	int T = stoi(argv[3]);
+	float P = stof(argv[4]);
+	int G = stoi(argv[5]);
+	
 	if(P>1  || G>2 || G<0){
-
 	cout << "one of the inputs was wrong, please try again.";
 	exit(0);
-	}	
-	ofstream output (argv[5]);
-	if(output.fail())
-	{
-	cout << "File: " << argv[5] << " not found\n";
-	exit(1);
 	}
-	if(argv[0] == "gen")
+	string generationType = argv[1];
+	if(generationType.compare("gen") == 0)
 	{
-	output = Generate(N,T,P,G);
+	Generate(N,T,P,G,argv[6]);
 	}
-	output.close();
 	return 0;
 }
-unsigned int  Generate (int N, int T, float P, int G)
+void  Generate (int N, int T, float P, int G, char * O)
 {
-//output header to output there
-//the rest of this |SHOULD| work
-
+	ofstream output (O);
+	if(output.fail()){
+	cout << "File: " << O << " not found\n";
+	exit(1);
+	}
 	random_device rd;
-	unsigned int TBit [T];
+	unsigned int TBit;
+	unsigned int RSeed = rd();
+	output << "#==================================================================\n";
+	output << "# generator "; 
+	switch (G){
+	case 0:
+	output << "min_rand";
+	break;
+	case 1:
+	output << "knuth_b";
+	break;
+	case 2:
+	output << "ranlux24";
+	break;
+	default:
+	break;
+	}
+	output << " seed = " << RSeed << '\n';
+	output << "#==================================================================\n";
+	output << "type: " << 'd' << '\n';
+	output << "count: " << N << '\n';
+	output << "numbit: " << 32 << '\n';
 	if(G == 0){
-		cout << "Linear Congruential Engine";
-		minstd_rand gen(rd());
+		cout << "Linear Congruential Engine\n";
+		minstd_rand gen(RSeed);
 		bernoulli_distribution d(P);
 		for(int i = 0; i < N; i++){
-			for(int n = 0; n < T; n++){
-				TBit[i] =  d(gen); 
+				TBit =  d(gen); 
+			for(int n = 1; n < T; n++){
+				TBit =  (TBit << 1) | d(gen); 
 			}
+		output << TBit << '\n';
 		}
 	}
 	else if(G == 1){
-		cout << "Shuffle Order Engine";
-		knuth_b gen(rd());
+		cout << "Shuffle Order Engine\n";
+		knuth_b gen(RSeed);
 		bernoulli_distribution d(P);
 		for(int i = 0; i < N; i++){
-			for(int n = 0; n < T; n++){
-				TBit[i] =  d(gen); 
+				TBit =  d(gen); 
+			for(int n = 1; n < T; n++){
+				TBit =  (TBit << 1) | d(gen); 
 			}
+		output << TBit << '\n';
 		}
 	}
 	else if(G == 2){
-		cout << "Subtract With Carry Engine";
-		ranlux24_base gen(rd());
+		cout << "Subtract With Carry Engine\n";
+		ranlux24_base gen(RSeed);
 		bernoulli_distribution d(P);
 		for(int i = 0; i < N; i++){
-			for(int n = 0; n < T; n++){
-				TBit[i] =  d(gen); 
+				TBit =  d(gen); 
+			for(int n = 1; n < T; n++){
+				TBit =  (TBit << 1) | d(gen); 
 			}
-	
-		output << '\n';
+		output << TBit << '\n';
 		}
 	}
-	return TBit;
+	output.close();
 }
 void Statistics (int T, float P, int G)
 {
 }
-void FileOutput(cstring
