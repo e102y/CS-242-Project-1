@@ -3,8 +3,6 @@
 #include <fstream>
 #include <random>
 #include <cstring>
-//#include <clib>
-//#include "OrderedSet.hpp"
 using namespace std;
 void Generate (int N, int T, float P, int G, char * O);
 void Statistics (int T, float P, int G);
