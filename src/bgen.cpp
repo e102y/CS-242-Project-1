@@ -113,6 +113,7 @@ void Statistics (int N, int T, float P, int G, char * O)
 	cout << "File: " << O << " not found\n";
 	exit(1);
 	}
+	float VA[N];
 	unsigned int myHead = 0;
 	random_device rd;
 	unsigned int TBit;
@@ -146,6 +147,7 @@ void Statistics (int N, int T, float P, int G, char * O)
 		output << temp  << '\n';
 //		output <<  float(TBit)/float(N)  << '\n';
 		myHead += TBit;
+		VA[i] = TBit;
 		}
 	}
 	else if(G == 1){
@@ -160,6 +162,7 @@ void Statistics (int N, int T, float P, int G, char * O)
 		float temp = float(TBit)/float(T);
 		output << temp  << '\n';
 		myHead += TBit;
+		VA[i] = TBit;
 		}
 	}
 	else if(G == 2){
@@ -174,9 +177,20 @@ void Statistics (int N, int T, float P, int G, char * O)
 		float temp = float(TBit)/float(T);
 		output << temp  << '\n';
 		myHead += TBit;
+		VA[i] = TBit;
 		}
 	}
+	float myMean = float(myHead)/float(N);
+	unsigned float VAR =0;
+	for(int i = 0; i < N; i++)
+	{
+		VAR += (VA[i]-myMean)*(VA[i]-myMean);
+	}
+	VAR = VAR/N;
+	
 	output << "Expected Value: " << N*P*T << '\n';
-	output << "Sample Mean: " <<  myHead/N << '\n';
+	output << "Sample Mean: " <<  myMean << '\n';
+	output << "Expected Variance: " << P*(1-P) << '\n';
+	output << "Sample Variance: " << VAR << '\n';
 	output.close();
 }
