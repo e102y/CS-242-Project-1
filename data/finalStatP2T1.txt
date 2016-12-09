@@ -8,6 +8,7 @@
 0.59375
 0.59375
 0.46875
+42
 Expected Value: 176
 Sample Mean: 18.3
 Expected Variance: 0.2475
