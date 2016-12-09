@@ -1,0 +1,217 @@
+Script started on Thu 08 Dec 2016 09:54:24 PM PST
+Generator 0 p=.5
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P1.txt|  6.79e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.32455546|  PASSED  
+p=.6
+]0;rhodesousley@blue:~/cs242f16/Proj1/dieharder-3.31.0"e102y"] dieharder-3.31.0] ==> echo p=.6./dieharder/dieharder -d 4 -g 202 -f ../currentBuild/src/genTestG0P1.txt1P.txt2.txt
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P2.txt|  6.84e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00000000|  FAILED  
+testing p=.55
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P4.txt|  6.79e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00000000|  FAILED  
+testing  p=.525
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P5.txt|  6.68e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00000000|  FAILED  
+testing p=.5125
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P6.txt|  6.72e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00000000|  FAILED  
+testing p=.50625
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P7.txt|  6.78e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00000000|  FAILED  
+testing p=.503125
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P8.txt|  4.87e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00021483|   WEAK   
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P8.txt|  6.76e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00021483|   WEAK   
+testing p=.5035
+
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P9.txt|  6.84e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00105032|   WEAK   
+testing p=.504
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P10.txt|  6.77e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00000000|  FAILED  
+I can therefore conclude that the probability value for which it consistently reports failed is .504
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P10.txt|  6.76e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00000000|  FAILED  
+
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG0P10.txt|  6.94e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00000000|  FAILED  
+
+Now beginning tests for generator 2
+1]   Running                 ./a.out gen 10000000 32 .5035 2 genTestG2P2.txt &
+2]-  Running                 ./a.out gen 10000000 32 .504 2 genTestG2P3.txt &
+3]+  Running                 ./a.out gen 10000000 32 .5 2 genTestG2P1.txt &
+1]   Done                    ./a.out gen 10000000 32 .5035 2 genTestG2P2.txt
+2]-  Done                    ./a.out gen 10000000 32 .504 2 genTestG2P3.txt
+3]+  Done                    ./a.out gen 10000000 32 .5 2 genTestG2P1.txt
+testing P=.5
+
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG2P1.txt|  5.91e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.82357500|  PASSED  
+
+   now testing P=.5035
+
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG2P2.txt|  5.88e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00000001|  FAILED  
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG2P2.txt|  6.72e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00000001|  FAILED  
+testing p=.5025
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG2P4.txt|  6.68e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.76687387|  PASSED  
+now testing p=.503
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG2P5.txt|  5.73e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00944885|  PASSED  
+
+   
+   now testing p=.503
+#=============================================================================#
+#            dieharder version 3.31.0 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+     file_input|../currentBuild/src/genTestG2P6.txt|  6.52e+06  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+# The file file_input was rewound 3 times
+   diehard_bitstream|   0|   2097152|     100|0.00001092|   WEAK   
+
+I can therefore conclude that P=.5035 is the value at which dieharder consistently fails generator 2
+exit
+
+Script done on Thu 08 Dec 2016 10:30:31 PM PST
