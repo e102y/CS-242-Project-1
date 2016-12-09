@@ -1,0 +1,14 @@
+0.5625
+0.53125
+0.40625
+0.5625
+0.59375
+0.6875
+0.71875
+0.59375
+0.59375
+0.46875
+Expected Value: 176
+Sample Mean: 18.3
+Expected Variance: 0.2475
+Sample Variance: 0.244062
