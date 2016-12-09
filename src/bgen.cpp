@@ -181,16 +181,16 @@ void Statistics (int N, int T, float P, int G, char * O)
 		}
 	}
 	float myMean = float(myHead)/float(N);
-	unsigned float VAR =0;
+	float Var =0;
 	for(int i = 0; i < N; i++)
 	{
-		VAR += (VA[i]-myMean)*(VA[i]-myMean);
+		Var += (VA[i]-myMean)*(VA[i]-myMean);
 	}
-	VAR = VAR/N;
-	
+	Var = Var/(N*T);
+	output << 42 << '\n';	
 	output << "Expected Value: " << N*P*T << '\n';
 	output << "Sample Mean: " <<  myMean << '\n';
 	output << "Expected Variance: " << P*(1-P) << '\n';
-	output << "Sample Variance: " << VAR << '\n';
+	output << "Sample Variance: " << Var << '\n';
 	output.close();
 }
