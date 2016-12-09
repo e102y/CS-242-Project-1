@@ -98,6 +98,7 @@
 0.5625
 0.5
 0.71875
+42
 Expected Value: 1920
 Sample Mean: 19.38
 Expected Variance: 0.24
