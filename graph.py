@@ -4,12 +4,13 @@ import sys
 
 # inserting x values
 def read_in(x):
-
     with open(x,"r") as ins:
-        	x = []
-        	y = []
-        	for line in ins:
-        		x.append(float(line))
+        x = []
+        y = []
+        for line in ins:
+            x.append(float(line))
+            if float(line) == 42:
+                break
     return x
 
 ## variable declaration 
